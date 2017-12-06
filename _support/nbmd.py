@@ -23,4 +23,4 @@ fdtowrite=open(filetowrite, "w")
 summarystuff = SUMMARYSTUFF
 fdtowrite.write(preamble+summarystuff+buffer)
 fdtowrite.close()
-os.rename(filetowrite, filetoread)
+#os.rename(filetowrite, filetoread)

@@ -18,7 +18,7 @@
    2. `jupyter nbconvert --output-dir . --to html notebooks/olives-model.ipynb`
 4. Copy `oldondex.html` from `gpages` to `index.html` in `testgpages`
 5. Commit and push
-6. Go to the hithub user interface for settings and enable a website on the `master` branch of `testgpages`.
+6. Go to the github user interface for settings and enable a website on the `master` branch of `testgpages`.
 7. Go to `https://username.github.io/testgpages/index.html` to see your website
 
 ## Web Site Version 2
@@ -28,12 +28,14 @@
 3. Using the `testgpages` terminal, convert the notebooks into markdown using our custom template.
    1. `jupyter nbconvert --output-dir . --to markdown --template ../gpages/_support/markdown.tpl notebooks/olives-eda.ipynb`
    2. `jupyter nbconvert --output-dir . --to markdown --template ../gpages/_support/markdown.tpl notebooks/olives-model.ipynb`
-4. Add **YAML** preambles and some TOC frontmatter to our markdown files
+4. (Go to the nbmd.py file and comment out line 26, only need to do once)
+5. Add **YAML** preambles and some TOC frontmatter to our markdown files
    1. `python ../gpages/_support/nbmd.py olives-eda.md` 
    2. `python ../gpages/_support/nbmd.py olives-model.md`
-5. Edit the markdown files to add a YAML tag `nav_include: 1` and `nav_include: 2` respectively to the above markdown files.The 1 and 2 reflect the position on the navigation menu in the `default.html` template in `_layouts`.  
-6. Commit and push everything
-7. Go to the website in a bit to check the improvements
+6. Rename `olives-eda.newmd` as `olives-eda.md` and `olives-model.newmd` as `olives-model.md`
+7. Edit the markdown files to add a YAML tag `nav_include: 1` and `nav_include: 2` respectively to the above markdown files.The 1 and 2 reflect the position on the navigation menu in the `default.html` template in `_layouts`.  
+8. Commit and push everything
+9. Go to the website in a bit to check the improvements
 
 ## Things for you to do
 
